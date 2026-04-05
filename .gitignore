@@ -1,6 +1,5 @@
 processed/
 __pycache__/
 .ipynb_checkpoints/
-*.parquet
 *.txt
 *.zst
