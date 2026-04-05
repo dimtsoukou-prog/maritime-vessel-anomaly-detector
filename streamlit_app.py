@@ -19,8 +19,8 @@ This dashboard detects suspicious vessel behaviour using an **Isolation Forest**
 
 @st.cache_data
 def load_data():
-    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    path = os.path.join(base_dir, 'data', 'processed', 'vessel_scores_01_01.parquet')
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    path = os.path.join(base_dir, 'vessel_scores_01_01.parquet')
     return pd.read_parquet(path)
 
 df = load_data()
